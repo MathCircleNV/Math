@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Math Circle of Nevada</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -12,50 +13,40 @@
       background: #f5f7fa;
       color: #333;
     }
-
     header {
       background: linear-gradient(90deg, #d35400, #2c3e50);
       color: white;
       text-align: center;
       padding: 2rem 1rem;
     }
-
     header img {
       width: 100px;
       margin-bottom: 1rem;
     }
-
     header h1 {
       font-size: 3rem;
       margin: 0.5rem 0;
     }
-
     .intro, .section {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
-
     .intro img {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
       margin-top: 1rem;
     }
-
     ul {
       padding-left: 1.5rem;
     }
-
     ul li {
       margin-bottom: 0.5rem;
     }
-
     .highlight {
       font-weight: bold;
     }
-
-    /* Donation section styles */
     .donation-section {
       max-width: 600px;
       margin: 40px auto 0 auto;
@@ -86,7 +77,35 @@
     .donation-section a.button:hover {
       background: #218838;
     }
-
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 40px 0;
+    }
+    .social-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 20px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .facebook-button {
+      background-color: #1877f2;
+    }
+    .facebook-button:hover {
+      background-color: #145db2;
+    }
+    .gofundme-button {
+      background-color: #00b964;
+    }
+    .gofundme-button:hover {
+      background-color: #019d56;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -94,7 +113,6 @@
       background: #ecf0f1;
       margin-top: 2rem;
     }
-
     footer a {
       color: #2980b9;
       text-decoration: none;
@@ -116,17 +134,19 @@
     <p>Founded by Madison Tran, the Math Circle of Nevada is one of the first free math enrichment programs for elementary and middle schoolers in Northern Nevada. Inspired by elite programs such as the UCLA Math Circle, which Madison had been a part of in elementary and middle school, we bring these experiences to our local community—for free.</p>
     <p>Our sessions blend fun, collaborative problem-solving with real-world applications, helping students build confidence, creativity, and a genuine love for math.</p>
     <p>
-    We are officially recognized as a Satellite Math Circle of the Olga Radko Endowed Math Circle at the University of California, Los Angeles. For details on the qualifications required for this designation, please visit:
-  </p>
-  <p>
-    <a href="https://circles.math.ucla.edu/circles/" target="_blank">
-      www.circles.math.ucla.edu/circles
-    </a>
-  </p>
+      We are officially recognized as a Satellite Math Circle of the Olga Radko Endowed Math Circle at the University of California, Los Angeles. For details on the qualifications required for this designation, please visit:
+    </p>
+    <p>
+      <a href="https://circles.math.ucla.edu/circles/" target="_blank">
+        www.circles.math.ucla.edu/circles
+      </a>
+    </p>
     <p>We are the only Math Circle operating in Reno.</p>
-  <p><a href="https://www.mathcircles.org/circles/math-circle-of-nevada/" target="_blank">
-    www.mathcircles.org/circles/math-circle-of-nevada/
-  </a></p>
+    <p>
+      <a href="https://www.mathcircles.org/circles/math-circle-of-nevada/" target="_blank">
+        www.mathcircles.org/circles/math-circle-of-nevada/
+      </a>
+    </p>
     <img src="math-instructor.jpg" alt="Instructor teaching math with a Venn diagram" />
   </section>
 
@@ -160,16 +180,15 @@
       <li>Deeper problem-solving strategies</li>
     </ul>
     <p><span class="highlight">Sample Topics:</span> The Infinite Hotel Paradox. Graph theory—can you plan a party without drama? Can you break a chocolate bar using math? What does it mean for something to be impossible to solve?</p>
+  </section>
 
-     <!-- Facebook Button Section -->
-  <div style="text-align: center; margin: 40px 0;">
-    <!-- Load Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <a href="https://www.facebook.com/profile.php?id=61577424998418" target="_blank" 
-       style="display: inline-flex; align-items: center; background-color: #1877f2; color: white; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; transition: background-color 0.3s;">
-      <i class="fab fa-facebook-f" style="margin-right: 10px;"></i>
-      Visit Our Facebook Page
+  <!-- Social Buttons Section -->
+  <div class="button-container">
+    <a href="https://www.facebook.com/profile.php?id=61577424998418" target="_blank" class="social-button facebook-button">
+      <i class="fab fa-facebook-f" style="margin-right: 10px;"></i> Facebook
+    </a>
+    <a href="https://www.gofundme.com/f/help-math-circle-of-nevada-inspire-young-minds" target="_blank" class="social-button gofundme-button">
+      <i class="fas fa-donate" style="margin-right: 10px;"></i> Support Us
     </a>
   </div>
 
