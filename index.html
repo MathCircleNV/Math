@@ -32,11 +32,15 @@
       max-width: 900px;
       margin: auto;
     }
-    .intro img {
-      max-width: 100%;
+    .intro img.instructor-photo {
+      max-width: 400px;  /* reduced from 100% to make it smaller */
+      width: 100%;
       height: auto;
       border-radius: 10px;
       margin-top: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     ul {
       padding-left: 1.5rem;
@@ -46,36 +50,6 @@
     }
     .highlight {
       font-weight: bold;
-    }
-    .donation-section {
-      max-width: 600px;
-      margin: 40px auto 0 auto;
-      padding: 40px 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    .donation-section h2 {
-      color: #2c3e50;
-      margin-bottom: 16px;
-    }
-    .donation-section p {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-    .donation-section a.button {
-      display: inline-block;
-      background: #28a745;
-      color: white;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .donation-section a.button:hover {
-      background: #218838;
     }
     .button-container {
       display: flex;
@@ -147,7 +121,7 @@
         www.mathcircles.org/circles/math-circle-of-nevada/
       </a>
     </p>
-    <img src="math-instructor.jpg" alt="Instructor teaching math with a Venn diagram" />
+    <img src="math-instructor.jpg" alt="Instructor teaching math with a Venn diagram" class="instructor-photo" />
   </section>
 
   <section class="section">
