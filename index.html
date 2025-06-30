@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Math Circle of Nevada</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
@@ -80,6 +80,20 @@
     .gofundme-button:hover {
       background-color: #019d56;
     }
+    .signup-button {
+      display: inline-block;
+      background-color: #4285F4;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-family: sans-serif;
+      transition: background-color 0.3s;
+    }
+    .signup-button:hover {
+      background-color: #3367D6;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -96,7 +110,7 @@
 <body>
 
   <header>
-    <img src="math-circle-logo.png" alt="Math Circle of Nevada logo" />
+    <img src="math-circle-logo.png" alt="Math Circle of Nevada logo"/>
     <h1>Math Circle of Nevada</h1>
     <p>A Nevada nonprofit corporation</p>
     <p>Empowering Northern Nevada's youth through joyful mathematics</p>
@@ -121,7 +135,7 @@
         www.mathcircles.org/circles/math-circle-of-nevada/
       </a>
     </p>
-    <img src="math-instructor.jpg" alt="Instructor teaching math with a Venn diagram" class="instructor-photo" />
+    <img src="math-instructor.jpg" alt="Instructor teaching math with a Venn diagram" class="instructor-photo"/>
   </section>
 
   <section class="section">
@@ -155,20 +169,13 @@
     </ul>
     <p><span class="highlight">Sample Topics:</span> The Infinite Hotel Paradox. Graph theory—can you plan a party without drama? Can you break a chocolate bar using math? What does it mean for something to be impossible to solve?</p>
   </section>
-<a href="https://forms.gle/2ZwgDAtcSgQMSD6s8" target="_blank" style="
-  display: inline-block;
-  background-color: #4285F4;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-family: sans-serif;
-  transition: background-color 0.3s;
-" onmouseover="this.style.backgroundColor='#3367D6';" onmouseout="this.style.backgroundColor='#4285F4';">
-  Sign up
-</a>
-  <!-- Social Buttons Section -->
+
+  <div class="button-container">
+    <a href="https://forms.gle/2ZwgDAtcSgQMSD6s8" target="_blank" class="signup-button">
+      Sign up
+    </a>
+  </div>
+
   <div class="button-container">
     <a href="https://www.facebook.com/profile.php?id=61577424998418" target="_blank" class="social-button facebook-button">
       <i class="fab fa-facebook-f" style="margin-right: 10px;"></i> Facebook
